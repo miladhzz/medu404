@@ -52,10 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +100,20 @@
     <Content Include="img\signal\3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Check-Circle-2--Streamline-Nova.png" />
+    <None Include="Resources\Disable-Remove-Tag--Streamline-Nova.png" />
+    <None Include="Resources\00.png" />
+    <None Include="Resources\99.png" />
+    <None Include="Resources\881.png" />
+    <None Include="Resources\88.png" />
+    <None Include="Resources\77.png" />
+    <None Include="Resources\66.png" />
+    <None Include="Resources\55.png" />
+    <None Include="Resources\44.png" />
+    <None Include="Resources\33.png" />
+    <None Include="Resources\22.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\saa16-2.png" />
     <None Include="Resources\Phone-Circle--Streamline-Nova.png" />
     <None Include="Resources\Camera-Circle--Streamline-Nova.png" />
     <None Include="Resources\saa16.png" />

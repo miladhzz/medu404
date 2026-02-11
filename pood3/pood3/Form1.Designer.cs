@@ -134,6 +134,7 @@
       this.label5.TabIndex = 8;
       this.label5.Text = "Swipe to open";
       this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.label5.Click += new System.EventHandler(this.label5_Click);
       // 
       // pictureBoxCamera
       // 

@@ -101,5 +101,10 @@ namespace pood3
 
       labelDate.Text = DateTime.Now.ToString("ddd, MMMM dd");
     }
+
+    private void label5_Click(object sender, EventArgs e)
+    {
+        new Form2().ShowDialog();
+    }
   }
 }
