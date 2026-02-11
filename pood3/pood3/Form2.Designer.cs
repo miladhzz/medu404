@@ -49,6 +49,7 @@
       this.pictureBox14 = new System.Windows.Forms.PictureBox();
       this.pictureBoxSignal = new System.Windows.Forms.PictureBox();
       this.timer1 = new System.Windows.Forms.Timer(this.components);
+      this.panel1 = new System.Windows.Forms.Panel();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,6 +65,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignal)).BeginInit();
+      this.panel1.SuspendLayout();
       this.SuspendLayout();
       // 
       // labelPass
@@ -71,7 +73,7 @@
       this.labelPass.BackColor = System.Drawing.Color.Transparent;
       this.labelPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.labelPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-      this.labelPass.Location = new System.Drawing.Point(67, 313);
+      this.labelPass.Location = new System.Drawing.Point(22, 24);
       this.labelPass.Name = "labelPass";
       this.labelPass.Size = new System.Drawing.Size(384, 58);
       this.labelPass.TabIndex = 0;
@@ -81,7 +83,7 @@
       // 
       this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox1.Image = global::pood3.Properties.Resources._11;
-      this.pictureBox1.Location = new System.Drawing.Point(67, 412);
+      this.pictureBox1.Location = new System.Drawing.Point(22, 123);
       this.pictureBox1.Name = "pictureBox1";
       this.pictureBox1.Size = new System.Drawing.Size(73, 68);
       this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -93,7 +95,7 @@
       // 
       this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox2.Image = global::pood3.Properties.Resources._22;
-      this.pictureBox2.Location = new System.Drawing.Point(226, 412);
+      this.pictureBox2.Location = new System.Drawing.Point(181, 123);
       this.pictureBox2.Name = "pictureBox2";
       this.pictureBox2.Size = new System.Drawing.Size(73, 68);
       this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -105,7 +107,7 @@
       // 
       this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox3.Image = global::pood3.Properties.Resources._33;
-      this.pictureBox3.Location = new System.Drawing.Point(378, 412);
+      this.pictureBox3.Location = new System.Drawing.Point(333, 123);
       this.pictureBox3.Name = "pictureBox3";
       this.pictureBox3.Size = new System.Drawing.Size(73, 68);
       this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,7 +119,7 @@
       // 
       this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox6.Image = global::pood3.Properties.Resources._66;
-      this.pictureBox6.Location = new System.Drawing.Point(378, 500);
+      this.pictureBox6.Location = new System.Drawing.Point(333, 211);
       this.pictureBox6.Name = "pictureBox6";
       this.pictureBox6.Size = new System.Drawing.Size(73, 68);
       this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +131,7 @@
       // 
       this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox5.Image = global::pood3.Properties.Resources._55;
-      this.pictureBox5.Location = new System.Drawing.Point(226, 500);
+      this.pictureBox5.Location = new System.Drawing.Point(181, 211);
       this.pictureBox5.Name = "pictureBox5";
       this.pictureBox5.Size = new System.Drawing.Size(73, 68);
       this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +143,7 @@
       // 
       this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox4.Image = global::pood3.Properties.Resources._44;
-      this.pictureBox4.Location = new System.Drawing.Point(67, 500);
+      this.pictureBox4.Location = new System.Drawing.Point(22, 211);
       this.pictureBox4.Name = "pictureBox4";
       this.pictureBox4.Size = new System.Drawing.Size(73, 68);
       this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,7 +155,7 @@
       // 
       this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox9.Image = global::pood3.Properties.Resources._99;
-      this.pictureBox9.Location = new System.Drawing.Point(378, 586);
+      this.pictureBox9.Location = new System.Drawing.Point(333, 297);
       this.pictureBox9.Name = "pictureBox9";
       this.pictureBox9.Size = new System.Drawing.Size(73, 68);
       this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,7 +167,7 @@
       // 
       this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox8.Image = global::pood3.Properties.Resources._88;
-      this.pictureBox8.Location = new System.Drawing.Point(226, 586);
+      this.pictureBox8.Location = new System.Drawing.Point(181, 297);
       this.pictureBox8.Name = "pictureBox8";
       this.pictureBox8.Size = new System.Drawing.Size(73, 68);
       this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +179,7 @@
       // 
       this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox7.Image = global::pood3.Properties.Resources._77;
-      this.pictureBox7.Location = new System.Drawing.Point(67, 586);
+      this.pictureBox7.Location = new System.Drawing.Point(22, 297);
       this.pictureBox7.Name = "pictureBox7";
       this.pictureBox7.Size = new System.Drawing.Size(73, 68);
       this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,7 +191,7 @@
       // 
       this.pictureBoxOk.BackColor = System.Drawing.Color.Transparent;
       this.pictureBoxOk.Image = global::pood3.Properties.Resources.Check_Circle_2__Streamline_Nova;
-      this.pictureBoxOk.Location = new System.Drawing.Point(378, 676);
+      this.pictureBoxOk.Location = new System.Drawing.Point(333, 387);
       this.pictureBoxOk.Name = "pictureBoxOk";
       this.pictureBoxOk.Size = new System.Drawing.Size(73, 68);
       this.pictureBoxOk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -201,7 +203,7 @@
       // 
       this.pictureBox0.BackColor = System.Drawing.Color.Transparent;
       this.pictureBox0.Image = global::pood3.Properties.Resources._00;
-      this.pictureBox0.Location = new System.Drawing.Point(226, 676);
+      this.pictureBox0.Location = new System.Drawing.Point(181, 387);
       this.pictureBox0.Name = "pictureBox0";
       this.pictureBox0.Size = new System.Drawing.Size(73, 68);
       this.pictureBox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,7 +215,7 @@
       // 
       this.pictureBoxRemove.BackColor = System.Drawing.Color.Transparent;
       this.pictureBoxRemove.Image = global::pood3.Properties.Resources.Disable_Remove_Tag__Streamline_Nova;
-      this.pictureBoxRemove.Location = new System.Drawing.Point(67, 676);
+      this.pictureBoxRemove.Location = new System.Drawing.Point(22, 387);
       this.pictureBoxRemove.Name = "pictureBoxRemove";
       this.pictureBoxRemove.Size = new System.Drawing.Size(73, 68);
       this.pictureBoxRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -226,7 +228,7 @@
       this.labelHome.BackColor = System.Drawing.Color.Transparent;
       this.labelHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.labelHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-      this.labelHome.Location = new System.Drawing.Point(192, 787);
+      this.labelHome.Location = new System.Drawing.Point(200, 793);
       this.labelHome.Name = "labelHome";
       this.labelHome.Size = new System.Drawing.Size(133, 58);
       this.labelHome.TabIndex = 13;
@@ -295,6 +297,27 @@
       this.timer1.Interval = 1000;
       this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
       // 
+      // panel1
+      // 
+      this.panel1.BackColor = System.Drawing.Color.Transparent;
+      this.panel1.Controls.Add(this.labelPass);
+      this.panel1.Controls.Add(this.pictureBox1);
+      this.panel1.Controls.Add(this.pictureBox2);
+      this.panel1.Controls.Add(this.pictureBox3);
+      this.panel1.Controls.Add(this.pictureBox4);
+      this.panel1.Controls.Add(this.pictureBox5);
+      this.panel1.Controls.Add(this.pictureBox6);
+      this.panel1.Controls.Add(this.pictureBoxOk);
+      this.panel1.Controls.Add(this.pictureBox7);
+      this.panel1.Controls.Add(this.pictureBox0);
+      this.panel1.Controls.Add(this.pictureBox8);
+      this.panel1.Controls.Add(this.pictureBoxRemove);
+      this.panel1.Controls.Add(this.pictureBox9);
+      this.panel1.Location = new System.Drawing.Point(50, 295);
+      this.panel1.Name = "panel1";
+      this.panel1.Size = new System.Drawing.Size(425, 475);
+      this.panel1.TabIndex = 19;
+      // 
       // Form2
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -302,25 +325,13 @@
       this.BackgroundImage = global::pood3.Properties.Resources.saa16_2;
       this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(521, 887);
+      this.Controls.Add(this.panel1);
       this.Controls.Add(this.label4);
       this.Controls.Add(this.pictureBox13);
       this.Controls.Add(this.pictureBox14);
       this.Controls.Add(this.pictureBoxSignal);
       this.Controls.Add(this.labelMessage);
       this.Controls.Add(this.labelHome);
-      this.Controls.Add(this.pictureBoxOk);
-      this.Controls.Add(this.pictureBox0);
-      this.Controls.Add(this.pictureBoxRemove);
-      this.Controls.Add(this.pictureBox9);
-      this.Controls.Add(this.pictureBox8);
-      this.Controls.Add(this.pictureBox7);
-      this.Controls.Add(this.pictureBox6);
-      this.Controls.Add(this.pictureBox5);
-      this.Controls.Add(this.pictureBox4);
-      this.Controls.Add(this.pictureBox3);
-      this.Controls.Add(this.pictureBox2);
-      this.Controls.Add(this.pictureBox1);
-      this.Controls.Add(this.labelPass);
       this.DoubleBuffered = true;
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.Name = "Form2";
@@ -341,6 +352,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignal)).EndInit();
+      this.panel1.ResumeLayout(false);
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -368,5 +380,6 @@
     private System.Windows.Forms.PictureBox pictureBox14;
     private System.Windows.Forms.PictureBox pictureBoxSignal;
     private System.Windows.Forms.Timer timer1;
+    private System.Windows.Forms.Panel panel1;
   }
 }

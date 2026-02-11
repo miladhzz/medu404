@@ -15,6 +15,9 @@ namespace pood3
   public partial class Form2 : Form
   {
     private ArrayList enteredPassword = new ArrayList();
+    private int attemptCount = 0;
+    private bool locked = false;
+    private int timeLeft = 10;
 
     public Form2()
     {
@@ -32,6 +35,22 @@ namespace pood3
       int i = random.Next(1, 4);
       pictureBoxSignal.ImageLocation = "img\\signal\\" + i.ToString() + ".png";
 
+
+
+      if (locked == true)
+      {
+        timeLeft--;
+        labelMessage.Text = "Try again in " + timeLeft + " seconds";
+
+        if (timeLeft < 1)
+        {
+          timeLeft = 10;
+          locked = false;
+          panel1.Visible = true;
+          labelMessage.Text = "Enter Password:";
+          attemptCount = 0;
+        }
+      }
     }
 
     private void pictureBox1_Click(object sender, EventArgs e)
@@ -109,6 +128,16 @@ namespace pood3
       else
       {
         labelMessage.Text = "Incorrect PIN entered";
+        enteredPassword.Clear();
+        labelPass.Text = "";
+        attemptCount++;
+
+        if (attemptCount >= 3)
+        {
+          labelMessage.Text = "Try again in " + timeLeft + " seconds";
+          locked = true;
+          panel1.Visible = false;
+        }
       }
     }
 
