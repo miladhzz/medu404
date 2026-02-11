@@ -43,7 +43,7 @@
       this.pictureBox0 = new System.Windows.Forms.PictureBox();
       this.pictureBoxRemove = new System.Windows.Forms.PictureBox();
       this.labelHome = new System.Windows.Forms.Label();
-      this.label3 = new System.Windows.Forms.Label();
+      this.labelMessage = new System.Windows.Forms.Label();
       this.label4 = new System.Windows.Forms.Label();
       this.pictureBox13 = new System.Windows.Forms.PictureBox();
       this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -234,16 +234,16 @@
       this.labelHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.labelHome.Click += new System.EventHandler(this.label2_Click);
       // 
-      // label3
+      // labelMessage
       // 
-      this.label3.BackColor = System.Drawing.Color.Transparent;
-      this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-      this.label3.Location = new System.Drawing.Point(67, 243);
-      this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(384, 58);
-      this.label3.TabIndex = 14;
-      this.label3.Text = "Enter Password:";
-      this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.labelMessage.BackColor = System.Drawing.Color.Transparent;
+      this.labelMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+      this.labelMessage.Location = new System.Drawing.Point(67, 243);
+      this.labelMessage.Name = "labelMessage";
+      this.labelMessage.Size = new System.Drawing.Size(384, 58);
+      this.labelMessage.TabIndex = 14;
+      this.labelMessage.Text = "Enter Password:";
+      this.labelMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // label4
       // 
@@ -306,7 +306,7 @@
       this.Controls.Add(this.pictureBox13);
       this.Controls.Add(this.pictureBox14);
       this.Controls.Add(this.pictureBoxSignal);
-      this.Controls.Add(this.label3);
+      this.Controls.Add(this.labelMessage);
       this.Controls.Add(this.labelHome);
       this.Controls.Add(this.pictureBoxOk);
       this.Controls.Add(this.pictureBox0);
@@ -362,7 +362,7 @@
     private System.Windows.Forms.PictureBox pictureBox0;
     private System.Windows.Forms.PictureBox pictureBoxRemove;
     private System.Windows.Forms.Label labelHome;
-    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label labelMessage;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.PictureBox pictureBox13;
     private System.Windows.Forms.PictureBox pictureBox14;
