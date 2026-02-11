@@ -146,6 +146,9 @@
       this.pictureBoxCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.pictureBoxCamera.TabIndex = 9;
       this.pictureBoxCamera.TabStop = false;
+      this.pictureBoxCamera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxCamera_MouseDown);
+      this.pictureBoxCamera.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxCamera_MouseMove);
+      this.pictureBoxCamera.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxCamera_MouseUp);
       // 
       // pictureBoxCall
       // 
@@ -157,6 +160,9 @@
       this.pictureBoxCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.pictureBoxCall.TabIndex = 10;
       this.pictureBoxCall.TabStop = false;
+      this.pictureBoxCall.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxCall_MouseDown);
+      this.pictureBoxCall.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxCall_MouseMove);
+      this.pictureBoxCall.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxCall_MouseUp);
       // 
       // timerSignal
       // 
@@ -186,6 +192,7 @@
       this.Name = "Form1";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Samsung";
+      this.Load += new System.EventHandler(this.Form1_Load);
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignal)).EndInit();

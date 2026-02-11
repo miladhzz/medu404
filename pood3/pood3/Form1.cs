@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace pood3
@@ -15,36 +9,31 @@ namespace pood3
     public Form1()
     {
       InitializeComponent();
+    }
 
-      pictureBoxCamera.MouseDown += pictureBox1_MouseDown;
-      pictureBoxCamera.MouseMove += pictureBox1_MouseMove;
-      pictureBoxCamera.MouseUp += pictureBox1_MouseUp; 
-      
-      pictureBoxCall.MouseDown += pictureBoxCall_MouseDown;
-      pictureBoxCall.MouseMove += pictureBoxCall_MouseMove;
-      pictureBoxCall.MouseUp += pictureBoxCall_MouseUp;
+    #region
+    
 
+    bool isDragging = false;
+    bool isDraggingCall = false;
+    Point startPoint = new Point(0, 0);
+    Point startPointCall = new Point(0, 0);
+    private void Form1_Load(object sender, EventArgs e)
+    {
       startPoint = pictureBoxCamera.Location;
       startPointCall = pictureBoxCall.Location;
     }
 
-    private bool isDragging = false;
-    private bool isDraggingCall = false;
-    private Point startPoint = new Point(0, 0);
-    private Point startPointCall = new Point(0, 0);
-
-
-    private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+    private void pictureBoxCamera_MouseMove(object sender, MouseEventArgs e)
     {
       if (isDragging)
       {
         pictureBoxCamera.Left += e.X;
         pictureBoxCamera.Top += e.Y;
-
       }
     }
 
-    private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+    private void pictureBoxCamera_MouseUp(object sender, MouseEventArgs e)
     {
       if (e.Button == MouseButtons.Left)
       {
@@ -53,14 +42,12 @@ namespace pood3
       }
     }
 
-    private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+    private void pictureBoxCamera_MouseDown(object sender, MouseEventArgs e)
     {
       if (e.Button == MouseButtons.Left)
       {
         isDragging = true;
       }
-
-
     }
       private void pictureBoxCall_MouseMove(object sender, MouseEventArgs e)
     {
@@ -68,7 +55,6 @@ namespace pood3
       {
         pictureBoxCall.Left += e.X;
         pictureBoxCall.Top += e.Y;
-
       }
     }
 
@@ -88,7 +74,7 @@ namespace pood3
         isDraggingCall = true;
       }
     }
-
+    #endregion
     private void timerSignal_Tick(object sender, EventArgs e)
     {
       Random random = new Random();
@@ -106,5 +92,6 @@ namespace pood3
     {
         new Form2().ShowDialog();
     }
+   
   }
 }

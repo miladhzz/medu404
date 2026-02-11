@@ -1,23 +1,15 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace pood3
 {
   public partial class Form2 : Form
   {
-    private ArrayList enteredPassword = new ArrayList();
-    private int attemptCount = 0;
-    private bool locked = false;
-    private int timeLeft = 10;
+    ArrayList enteredPassword = new ArrayList();
+    int attemptCount = 0;
+    bool locked = false;
+    int timeLeft = 10;
 
     public Form2()
     {
@@ -34,8 +26,6 @@ namespace pood3
       Random random = new Random();
       int i = random.Next(1, 4);
       pictureBoxSignal.ImageLocation = "img\\signal\\" + i.ToString() + ".png";
-
-
 
       if (locked == true)
       {
@@ -59,6 +49,7 @@ namespace pood3
       labelPass.Text += "●";
     }
 
+    #region
     private void pictureBox2_Click(object sender, EventArgs e)
     {
       enteredPassword.Add(2);
@@ -112,7 +103,7 @@ namespace pood3
       enteredPassword.Add(0);
       labelPass.Text += "●";
     }
-
+    #endregion
     private void pictureBoxOk_Click(object sender, EventArgs e)
     {
       string password = "";
